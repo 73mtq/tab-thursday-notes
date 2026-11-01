@@ -1,0 +1,1169 @@
+[
+ {
+  "url": "https://zyscj.com/",
+  "path": "",
+  "file": "docs/index.md",
+  "title": "资源收藏夹",
+  "error": null,
+  "h2": [],
+  "links": 0
+ },
+ {
+  "url": "https://zyscj.com/zy/about.html",
+  "path": "/zy/about.html",
+  "file": "docs/zy/about.md",
+  "title": "关于本站",
+  "h2": [],
+  "links": 1,
+  "bytes": 262
+ },
+ {
+  "url": "https://zyscj.com/zy/",
+  "path": "/zy/",
+  "file": "docs/zy/index.md",
+  "title": "资源索引",
+  "h2": [],
+  "links": 0,
+  "bytes": 79
+ },
+ {
+  "url": "https://zyscj.com/zy/AI/AI%E5%AF%BC%E8%88%AA.html",
+  "path": "/zy/AI/AI%E5%AF%BC%E8%88%AA.html",
+  "file": "docs/zy/AI/AI导航.md",
+  "title": "🔗AI人工智能指南",
+  "h2": [],
+  "links": 6,
+  "bytes": 462
+ },
+ {
+  "url": "https://zyscj.com/zy/AI/",
+  "path": "/zy/AI/",
+  "file": "docs/zy/AI/index.md",
+  "title": "AI",
+  "h2": [],
+  "links": 0,
+  "bytes": 0
+ },
+ {
+  "url": "https://zyscj.com/zy/AI/zypuu.html",
+  "path": "/zy/AI/zypuu.html",
+  "file": "docs/zy/AI/zypuu.md",
+  "title": "🔗资源铺更新记录",
+  "h2": [],
+  "links": 0,
+  "bytes": 8
+ },
+ {
+  "url": "https://zyscj.com/zy/music/audiobook.html",
+  "path": "/zy/music/audiobook.html",
+  "file": "docs/zy/music/audiobook.md",
+  "title": "🔗有声书与电台",
+  "h2": [
+   "[免费听书站](#免费听书站)",
+   "[在线FM](#在线fm)",
+   "[有声读物](#有声读物)",
+   "[国外电台](#国外电台)"
+  ],
+  "links": 38,
+  "bytes": 2162
+ },
+ {
+  "url": "https://zyscj.com/zy/music/musicsoftware.html",
+  "path": "/zy/music/musicsoftware.html",
+  "file": "docs/zy/music/musicsoftware.md",
+  "title": "🔗音乐软件下载",
+  "h2": [
+   "[手机APP](#手机app)",
+   "[Windows](#windows)",
+   "[音乐播放器](#音乐播放器)"
+  ],
+  "links": 42,
+  "bytes": 2976
+ },
+ {
+  "url": "https://zyscj.com/zy/music/musicwebsite.html",
+  "path": "/zy/music/musicwebsite.html",
+  "file": "docs/zy/music/musicwebsite.md",
+  "title": "🔗免费在线音乐网站",
+  "h2": [
+   "[在线免费音乐](#在线免费音乐)",
+   "[无损音乐站](#无损音乐站)"
+  ],
+  "links": 35,
+  "bytes": 1687
+ },
+ {
+  "url": "https://zyscj.com/zy/music/",
+  "path": "/zy/music/",
+  "file": "docs/zy/music/index.md",
+  "title": "音乐动听",
+  "h2": [],
+  "links": 0,
+  "bytes": 0
+ },
+ {
+  "url": "https://zyscj.com/zy/music/whitenoise.html",
+  "path": "/zy/music/whitenoise.html",
+  "file": "docs/zy/music/whitenoise.md",
+  "title": "🔗白噪音与MV",
+  "h2": [
+   "[白噪音](#白噪音)",
+   "[高清MV](#高清mv)"
+  ],
+  "links": 29,
+  "bytes": 1474
+ },
+ {
+  "url": "https://zyscj.com/zy/book/ancient.html",
+  "path": "/zy/book/ancient.html",
+  "file": "docs/zy/book/ancient.md",
+  "title": "🔗汉古籍资源",
+  "h2": [
+   "[中国大陆](#中国大陆)",
+   "[中国香港](#中国香港)",
+   "[中国台湾](#中国台湾)",
+   "[越南](#越南)",
+   "[美国](#美国)",
+   "[英国](#英国)",
+   "[韩国](#韩国)",
+   "[日本](#日本)",
+   "[俄罗斯](#俄罗斯)",
+   "[工具](#工具)",
+   "[词典汉典](#词典汉典)",
+   "[网盘资源](#网盘资源)"
+  ],
+  "links": 149,
+  "bytes": 17914
+ },
+ {
+  "url": "https://zyscj.com/zy/book/comic.html",
+  "path": "/zy/book/comic.html",
+  "file": "docs/zy/book/comic.md",
+  "title": "🔗免费漫画资源",
+  "h2": [
+   "[在线网站](#在线网站)",
+   "[其他漫画](#其他漫画)",
+   "[耽美漫画](#耽美漫画)",
+   "[免费漫画APP](#免费漫画app)",
+   "[kindle漫画](#kindle漫画)"
+  ],
+  "links": 15,
+  "bytes": 862
+ },
+ {
+  "url": "https://zyscj.com/zy/book/ebook.html",
+  "path": "/zy/book/ebook.html",
+  "file": "docs/zy/book/ebook.md",
+  "title": "🔗电子书杂志网站",
+  "h2": [
+   "[出版电子书](#出版电子书)",
+   "[电子书分享](#电子书分享)",
+   "[论坛](#论坛)",
+   "[网盘资源](#网盘资源)",
+   "[杂志](#杂志)",
+   "[收费电子书](#收费电子书)",
+   "[专业书籍](#专业书籍)"
+  ],
+  "links": 71,
+  "bytes": 4285
+ },
+ {
+  "url": "https://zyscj.com/zy/book/ebooksoft.html",
+  "path": "/zy/book/ebooksoft.html",
+  "file": "docs/zy/book/ebooksoft.md",
+  "title": "🔗小说书籍软件",
+  "h2": [],
+  "links": 30,
+  "bytes": 3018
+ },
+ {
+  "url": "https://zyscj.com/zy/book/enbook.html",
+  "path": "/zy/book/enbook.html",
+  "file": "docs/zy/book/enbook.md",
+  "title": "🔗英文电子书",
+  "h2": [],
+  "links": 16,
+  "bytes": 1046
+ },
+ {
+  "url": "https://zyscj.com/zy/book/fiction.html",
+  "path": "/zy/book/fiction.html",
+  "file": "docs/zy/book/fiction.md",
+  "title": "🔗免费网络小说",
+  "h2": [
+   "[网络小说搜索](#网络小说搜索)",
+   "[在线网站](#在线网站)",
+   "[精校小说](#精校小说)",
+   "[轻小说](#轻小说)",
+   "[英文玄幻小说](#英文玄幻小说)"
+  ],
+  "links": 106,
+  "bytes": 5805
+ },
+ {
+  "url": "https://zyscj.com/zy/book/pixiv.html",
+  "path": "/zy/book/pixiv.html",
+  "file": "docs/zy/book/pixiv.md",
+  "title": "🔗pixiv插画资源",
+  "h2": [
+   "[网站](#网站)",
+   "[软件](#软件)",
+   "[辅助工具](#辅助工具)"
+  ],
+  "links": 19,
+  "bytes": 1708
+ },
+ {
+  "url": "https://zyscj.com/zy/book/",
+  "path": "/zy/book/",
+  "file": "docs/zy/book/index.md",
+  "title": "阅读漫画",
+  "h2": [],
+  "links": 0,
+  "bytes": 0
+ },
+ {
+  "url": "https://zyscj.com/zy/book/zlibrary.html",
+  "path": "/zy/book/zlibrary.html",
+  "file": "docs/zy/book/zlibrary.md",
+  "title": "🔗Z-Library书籍资源",
+  "h2": [
+   "[🍉Z-Library官方](#🍉z-library官方)",
+   "[Z-Lib镜像/代理站](#z-lib镜像-代理站)",
+   "[🥥安娜的档案](#🥥安娜的档案)",
+   "[IPFS工具](#ipfs工具)",
+   "[收费方法](#收费方法)",
+   "[电子书工具](#电子书工具)"
+  ],
+  "links": 14,
+  "bytes": 1988
+ },
+ {
+  "url": "https://zyscj.com/zy/guide/DNS.html",
+  "path": "/zy/guide/DNS.html",
+  "file": "docs/zy/guide/DNS.md",
+  "title": "🔗修改DNS防止网站无法访问",
+  "h2": [
+   "[软件修改方案](#软件修改方案)",
+   "[手动修改方案](#手动修改方案)",
+   "[DNS地址列表](#dns地址列表)"
+  ],
+  "links": 10,
+  "bytes": 1955
+ },
+ {
+  "url": "https://zyscj.com/zy/guide/isoabroad.html",
+  "path": "/zy/guide/isoabroad.html",
+  "file": "docs/zy/guide/isoabroad.md",
+  "title": "🔗ios外区账号注册",
+  "h2": [],
+  "links": 4,
+  "bytes": 2208
+ },
+ {
+  "url": "https://zyscj.com/zy/guide/",
+  "path": "/zy/guide/",
+  "file": "docs/zy/guide/index.md",
+  "title": "各种指南",
+  "h2": [],
+  "links": 0,
+  "bytes": 17
+ },
+ {
+  "url": "https://zyscj.com/zy/guide/videoguide.html",
+  "path": "/zy/guide/videoguide.html",
+  "file": "docs/zy/guide/videoguide.md",
+  "title": "🔗影视资源指南",
+  "h2": [
+   "[搜索引擎](#搜索引擎)",
+   "[在线影视站](#在线影视站)",
+   "[官方影视解析](#官方影视解析)",
+   "[网盘搜索（高质量）](#网盘搜索-高质量)",
+   "[电视TV观影](#电视tv观影)",
+   "[影视下载（高质量）](#影视下载-高质量)",
+   "[字幕组](#字幕组)"
+  ],
+  "links": 12,
+  "bytes": 2376
+ },
+ {
+  "url": "https://zyscj.com/zy/office/CAD-standard.html",
+  "path": "/zy/office/CAD-standard.html",
+  "file": "docs/zy/office/CAD-standard.md",
+  "title": "🔗规范查询下载及CAD常用软件",
+  "h2": [
+   "[规范图集下载](#规范图集下载)",
+   "[软件下载](#软件下载)"
+  ],
+  "links": 25,
+  "bytes": 1944
+ },
+ {
+  "url": "https://zyscj.com/zy/office/color.html",
+  "path": "/zy/office/color.html",
+  "file": "docs/zy/office/color.md",
+  "title": "🔗配色方案资源索引",
+  "h2": [],
+  "links": 51,
+  "bytes": 2774
+ },
+ {
+  "url": "https://zyscj.com/zy/office/font.html",
+  "path": "/zy/office/font.html",
+  "file": "docs/zy/office/font.md",
+  "title": "🔗字体素材资源",
+  "h2": [
+   "[**字体素材**](#字体素材)",
+   "[**字体工具**](#字体工具)"
+  ],
+  "links": 54,
+  "bytes": 2970
+ },
+ {
+  "url": "https://zyscj.com/zy/office/icon.html",
+  "path": "/zy/office/icon.html",
+  "file": "docs/zy/office/icon.md",
+  "title": "🔗图标logo素材资源",
+  "h2": [
+   "[**ICON** 素材](#icon-素材)",
+   "[**LOGO** 素材](#logo-素材)",
+   "[**LOGO** **设计**](#logo-设计)"
+  ],
+  "links": 104,
+  "bytes": 5307
+ },
+ {
+  "url": "https://zyscj.com/zy/office/picture.html",
+  "path": "/zy/office/picture.html",
+  "file": "docs/zy/office/picture.md",
+  "title": "🔗无版权图库+矢量素材",
+  "h2": [
+   "[图库素材](#图库素材)",
+   "[**矢量素材**](#矢量素材)",
+   "[PSD素材](#psd素材)"
+  ],
+  "links": 60,
+  "bytes": 3350
+ },
+ {
+  "url": "https://zyscj.com/zy/office/png.html",
+  "path": "/zy/office/png.html",
+  "file": "docs/zy/office/png.md",
+  "title": "🔗png+纹理图案等素材",
+  "h2": [
+   "[**PNG**素材](#png素材)",
+   "[**插画素材**](#插画素材)",
+   "[**纹理素材**](#纹理素材)",
+   "[**模板素材**](#模板素材)"
+  ],
+  "links": 83,
+  "bytes": 4269
+ },
+ {
+  "url": "https://zyscj.com/zy/office/ppt.html",
+  "path": "/zy/office/ppt.html",
+  "file": "docs/zy/office/ppt.md",
+  "title": "🔗PPT与简历制作",
+  "h2": [
+   "[PPT在线制作](#ppt在线制作)",
+   "[PPT模板](#ppt模板)",
+   "[简历制作](#简历制作)",
+   "[简历模板资源](#简历模板资源)"
+  ],
+  "links": 48,
+  "bytes": 2146
+ },
+ {
+  "url": "https://zyscj.com/zy/office/",
+  "path": "/zy/office/",
+  "file": "docs/zy/office/index.md",
+  "title": "办公素材",
+  "h2": [],
+  "links": 0,
+  "bytes": 0
+ },
+ {
+  "url": "https://zyscj.com/zy/office/video-audio.html",
+  "path": "/zy/office/video-audio.html",
+  "file": "docs/zy/office/video-audio.md",
+  "title": "🔗视频与音效素材网站",
+  "h2": [
+   "[视频](#视频)",
+   "[音效](#音效)"
+  ],
+  "links": 35,
+  "bytes": 2081
+ },
+ {
+  "url": "https://zyscj.com/zy/office/wallpaper.html",
+  "path": "/zy/office/wallpaper.html",
+  "file": "docs/zy/office/wallpaper.md",
+  "title": "🔗壁纸网站与桌面美化",
+  "h2": [
+   "[壁纸网站](#壁纸网站)",
+   "[二次元壁纸](#二次元壁纸)",
+   "[特色壁纸](#特色壁纸)",
+   "[桌面美化](#桌面美化)"
+  ],
+  "links": 65,
+  "bytes": 3714
+ },
+ {
+  "url": "https://zyscj.com/zy/soft/android.html",
+  "path": "/zy/soft/android.html",
+  "file": "docs/zy/soft/android.md",
+  "title": "🔗安卓软件与PO解",
+  "h2": [
+   "[应用商店](#应用商店)",
+   "[Google Play下载](#google-play下载)"
+  ],
+  "links": 29,
+  "bytes": 2295
+ },
+ {
+  "url": "https://zyscj.com/zy/soft/blogforum.html",
+  "path": "/zy/soft/blogforum.html",
+  "file": "docs/zy/soft/blogforum.md",
+  "title": "🔗软件博客与论坛",
+  "h2": [
+   "[软件搜索](#软件搜索)",
+   "[软件博客](#软件博客)",
+   "[软件论坛](#软件论坛)"
+  ],
+  "links": 64,
+  "bytes": 3283
+ },
+ {
+  "url": "https://zyscj.com/zy/soft/browser.html",
+  "path": "/zy/soft/browser.html",
+  "file": "docs/zy/soft/browser.md",
+  "title": "🔗浏览器及插件脚本",
+  "h2": [
+   "[浏览器推荐](#浏览器推荐)",
+   "[Chrome插件下载](#chrome插件下载)",
+   "[Chrome插件/脚本推荐](#chrome插件-脚本推荐)",
+   "[常用Chrome插件](#常用chrome插件)"
+  ],
+  "links": 43,
+  "bytes": 3486
+ },
+ {
+  "url": "https://zyscj.com/zy/soft/crackabroad.html",
+  "path": "/zy/soft/crackabroad.html",
+  "file": "docs/zy/soft/crackabroad.md",
+  "title": "🔒国外PO解站",
+  "h2": [
+   "[国外综合破解站](#国外综合破解站)",
+   "[安卓破解](#安卓破解)"
+  ],
+  "links": 53,
+  "bytes": 2813
+ },
+ {
+  "url": "https://zyscj.com/zy/soft/crackgame.html",
+  "path": "/zy/soft/crackgame.html",
+  "file": "docs/zy/soft/crackgame.md",
+  "title": "🔗PO解游戏网站",
+  "h2": [
+   "[正版游戏平台](#正版游戏平台)",
+   "[pojie版游戏下载网站](#pojie版游戏下载网站)",
+   "[安卓游戏软件](#安卓游戏软件)"
+  ],
+  "links": 65,
+  "bytes": 3861
+ },
+ {
+  "url": "https://zyscj.com/zy/soft/findsoft.html",
+  "path": "/zy/soft/findsoft.html",
+  "file": "docs/zy/soft/findsoft.md",
+  "title": "🔗发现网站与应用",
+  "h2": [],
+  "links": 89,
+  "bytes": 4741
+ },
+ {
+  "url": "https://zyscj.com/zy/soft/iosmac.html",
+  "path": "/zy/soft/iosmac.html",
+  "file": "docs/zy/soft/iosmac.md",
+  "title": "🔗苹果MAC软件",
+  "h2": [
+   "[IOS软件下载](#ios软件下载)",
+   "[Mac软件下载网站与商店](#mac软件下载网站与商店)"
+  ],
+  "links": 77,
+  "bytes": 3788
+ },
+ {
+  "url": "https://zyscj.com/zy/soft/lanzou.html",
+  "path": "/zy/soft/lanzou.html",
+  "file": "docs/zy/soft/lanzou.md",
+  "title": "🔗蓝奏云与软件安装大全",
+  "h2": [
+   "[软件安装管家](#软件安装管家)",
+   "[蓝奏云破解软件](#蓝奏云破解软件)"
+  ],
+  "links": 45,
+  "bytes": 2389
+ },
+ {
+  "url": "https://zyscj.com/zy/soft/onlinegame.html",
+  "path": "/zy/soft/onlinegame.html",
+  "file": "docs/zy/soft/onlinegame.md",
+  "title": "🔗在线网页游戏",
+  "h2": [
+   "[在线网页游戏](#在线网页游戏)",
+   "[其他游戏相关](#其他游戏相关)",
+   "[云游戏平台](#云游戏平台)"
+  ],
+  "links": 47,
+  "bytes": 2275
+ },
+ {
+  "url": "https://zyscj.com/zy/soft/",
+  "path": "/zy/soft/",
+  "file": "docs/zy/soft/index.md",
+  "title": "软件游戏",
+  "h2": [],
+  "links": 0,
+  "bytes": 0
+ },
+ {
+  "url": "https://zyscj.com/zy/soft/tgsoft.html",
+  "path": "/zy/soft/tgsoft.html",
+  "file": "docs/zy/soft/tgsoft.md",
+  "title": "🔒TG电报软件",
+  "h2": [
+   "[國內软件频道](#國內软件频道)",
+   "[国外软件频道](#国外软件频道)",
+   "[马克丁软件](#马克丁软件)"
+  ],
+  "links": 47,
+  "bytes": 1987
+ },
+ {
+  "url": "https://zyscj.com/zy/soft/winefficiency.html",
+  "path": "/zy/soft/winefficiency.html",
+  "file": "docs/zy/soft/winefficiency.md",
+  "title": "🔗Windows效率工具",
+  "h2": [
+   "[磁盘文件大小查看](#磁盘文件大小查看)"
+  ],
+  "links": 56,
+  "bytes": 4379
+ },
+ {
+  "url": "https://zyscj.com/zy/soft/winsoft.html",
+  "path": "/zy/soft/winsoft.html",
+  "file": "docs/zy/soft/winsoft.md",
+  "title": "🔗常用Windows软件",
+  "h2": [],
+  "links": 50,
+  "bytes": 4233
+ },
+ {
+  "url": "https://zyscj.com/zy/soft/winsystem.html",
+  "path": "/zy/soft/winsystem.html",
+  "file": "docs/zy/soft/winsystem.md",
+  "title": "🔗Win系统安装与激活",
+  "h2": [
+   "[Windows激活](#windows激活)",
+   "[系统下载](#系统下载)",
+   "[重装系统PE工具](#重装系统pe工具)",
+   "[系统安装教程](#系统安装教程)"
+  ],
+  "links": 33,
+  "bytes": 2354
+ },
+ {
+  "url": "https://zyscj.com/zy/search/btcilidl.html",
+  "path": "/zy/search/btcilidl.html",
+  "file": "docs/zy/search/btcilidl.md",
+  "title": "🔒BT磁LI下载",
+  "h2": [
+   "[Windows](#windows)",
+   "[手机软件](#手机软件)"
+  ],
+  "links": 44,
+  "bytes": 3525
+ },
+ {
+  "url": "https://zyscj.com/zy/search/btciliweb.html",
+  "path": "/zy/search/btciliweb.html",
+  "file": "docs/zy/search/btciliweb.md",
+  "title": "🔒BT种Z磁L网站合集",
+  "h2": [
+   "[🌐国外磁力代理](#🌐国外磁力代理)",
+   "[🎯磁力网站](#🎯磁力网站)",
+   "[🚁BT工具](#🚁bt工具)"
+  ],
+  "links": 55,
+  "bytes": 2485
+ },
+ {
+  "url": "https://zyscj.com/zy/search/diskresource.html",
+  "path": "/zy/search/diskresource.html",
+  "file": "docs/zy/search/diskresource.md",
+  "title": "🔗网盘资源合集",
+  "h2": [
+   "[综合搜索](#综合搜索)",
+   "[博客分享](#博客分享)",
+   "[阿里云盘](#阿里云盘)",
+   "[论坛](#论坛)",
+   "[在线文档](#在线文档)",
+   "[软件](#软件)",
+   "[百度网盘](#百度网盘)",
+   "[蓝奏云](#蓝奏云)",
+   "[天翼云](#天翼云)",
+   "[城通网盘](#城通网盘)",
+   "[新浪微盘](#新浪微盘)",
+   "[夸克网盘](#夸克网盘)",
+   "[其他](#其他)",
+   "[TG网盘资源](#tg网盘资源)"
+  ],
+  "links": 116,
+  "bytes": 6497
+ },
+ {
+  "url": "https://zyscj.com/zy/search/girl.html",
+  "path": "/zy/search/girl.html",
+  "file": "docs/zy/search/girl.md",
+  "title": "🔒看妹子",
+  "h2": [],
+  "links": 76,
+  "bytes": 3942
+ },
+ {
+  "url": "https://zyscj.com/zy/search/",
+  "path": "/zy/search/",
+  "file": "docs/zy/search/index.md",
+  "title": "资源搜索",
+  "h2": [],
+  "links": 0,
+  "bytes": 0
+ },
+ {
+  "url": "https://zyscj.com/zy/search/spnetdisk.html",
+  "path": "/zy/search/spnetdisk.html",
+  "file": "docs/zy/search/spnetdisk.md",
+  "title": "🔗网盘不限速",
+  "h2": [],
+  "links": 12,
+  "bytes": 1163
+ },
+ {
+  "url": "https://zyscj.com/zy/search/tgchannel.html",
+  "path": "/zy/search/tgchannel.html",
+  "file": "docs/zy/search/tgchannel.md",
+  "title": "🔒TG群组频道资源",
+  "h2": [
+   "[综合搜索](#综合搜索)",
+   "[频道索引站点](#频道索引站点)",
+   "[telegram机器人索引](#telegram机器人索引)",
+   "[其他汇总页面](#其他汇总页面)"
+  ],
+  "links": 36,
+  "bytes": 1878
+ },
+ {
+  "url": "https://zyscj.com/zy/tool/actorline.html",
+  "path": "/zy/tool/actorline.html",
+  "file": "docs/zy/tool/actorline.md",
+  "title": "🔗电影台词搜索+拼接",
+  "h2": [
+   "[电影台词搜索](#电影台词搜索)",
+   "[电影台词拼接](#电影台词拼接)"
+  ],
+  "links": 11,
+  "bytes": 561
+ },
+ {
+  "url": "https://zyscj.com/zy/tool/email.html",
+  "path": "/zy/tool/email.html",
+  "file": "docs/zy/tool/email.md",
+  "title": "🔗临时邮箱",
+  "h2": [],
+  "links": 8,
+  "bytes": 477
+ },
+ {
+  "url": "https://zyscj.com/zy/tool/fileconvert.html",
+  "path": "/zy/tool/fileconvert.html",
+  "file": "docs/zy/tool/fileconvert.md",
+  "title": "🔗文件格式转换与传输",
+  "h2": [
+   "[文件格式转换](#文件格式转换)",
+   "[极速文件传输](#极速文件传输)"
+  ],
+  "links": 28,
+  "bytes": 1443
+ },
+ {
+  "url": "https://zyscj.com/zy/tool/map.html",
+  "path": "/zy/tool/map.html",
+  "file": "docs/zy/tool/map.md",
+  "title": "🔗地图资源下载",
+  "h2": [
+   "[地图资源站](#地图资源站)",
+   "[地图软件](#地图软件)"
+  ],
+  "links": 12,
+  "bytes": 1002
+ },
+ {
+  "url": "https://zyscj.com/zy/tool/ocr.html",
+  "path": "/zy/tool/ocr.html",
+  "file": "docs/zy/tool/ocr.md",
+  "title": "🔗OCR文字图片识别",
+  "h2": [
+   "[在线识别](#在线识别)",
+   "[电脑端](#电脑端)",
+   "[手机APP](#手机app)",
+   "[微信小程序](#微信小程序)"
+  ],
+  "links": 19,
+  "bytes": 1783
+ },
+ {
+  "url": "https://zyscj.com/zy/tool/pdf.html",
+  "path": "/zy/tool/pdf.html",
+  "file": "docs/zy/tool/pdf.md",
+  "title": "🔗PDF转换相关资源",
+  "h2": [
+   "[PDF在线工具](#pdf在线工具)",
+   "[PDF编辑器](#pdf编辑器)"
+  ],
+  "links": 22,
+  "bytes": 1239
+ },
+ {
+  "url": "https://zyscj.com/zy/tool/",
+  "path": "/zy/tool/",
+  "file": "docs/zy/tool/index.md",
+  "title": "实用工具",
+  "h2": [],
+  "links": 0,
+  "bytes": 0
+ },
+ {
+  "url": "https://zyscj.com/zy/tool/sms.html",
+  "path": "/zy/tool/sms.html",
+  "file": "docs/zy/tool/sms.md",
+  "title": "🔗短信接码",
+  "h2": [],
+  "links": 14,
+  "bytes": 803
+ },
+ {
+  "url": "https://zyscj.com/zy/tool/tools.html",
+  "path": "/zy/tool/tools.html",
+  "file": "docs/zy/tool/tools.md",
+  "title": "🔗综合工具",
+  "h2": [
+   "[综合工具](#综合工具)",
+   "[分类工具](#分类工具)"
+  ],
+  "links": 23,
+  "bytes": 1023
+ },
+ {
+  "url": "https://zyscj.com/zy/tool/virus.html",
+  "path": "/zy/tool/virus.html",
+  "file": "docs/zy/tool/virus.md",
+  "title": "🔗在线查毒",
+  "h2": [],
+  "links": 11,
+  "bytes": 501
+ },
+ {
+  "url": "https://zyscj.com/zy/study/certificate.html",
+  "path": "/zy/study/certificate.html",
+  "file": "docs/zy/study/certificate.md",
+  "title": "🔗考试考证资源",
+  "h2": [],
+  "links": 12,
+  "bytes": 683
+ },
+ {
+  "url": "https://zyscj.com/zy/study/chart.html",
+  "path": "/zy/study/chart.html",
+  "file": "docs/zy/study/chart.md",
+  "title": "🔗信息可视化",
+  "h2": [
+   "[图表制作](#图表制作)",
+   "[信息图形](#信息图形)",
+   "[数据可视化](#数据可视化)"
+  ],
+  "links": 15,
+  "bytes": 756
+ },
+ {
+  "url": "https://zyscj.com/zy/study/code.html",
+  "path": "/zy/study/code.html",
+  "file": "docs/zy/study/code.md",
+  "title": "🔗编程学习网站",
+  "h2": [
+   "[学习与教程](#学习与教程)",
+   "[计算机书籍](#计算机书籍)",
+   "[社区](#社区)",
+   "[博客](#博客)",
+   "[趋势榜单](#趋势榜单)",
+   "[开源镜像](#开源镜像)"
+  ],
+  "links": 79,
+  "bytes": 3984
+ },
+ {
+  "url": "https://zyscj.com/zy/study/English.html",
+  "path": "/zy/study/English.html",
+  "file": "docs/zy/study/English.md",
+  "title": "🔗英语学习资源",
+  "h2": [
+   "[**英语网站**](#英语网站)",
+   "[**英语资源**](#英语资源)",
+   "[**单词词汇**](#单词词汇)",
+   "[**听力口语**](#听力口语)",
+   "[**阅读理解**](#阅读理解)",
+   "[**写作词典**](#写作词典)",
+   "[**写作语法**](#写作语法)"
+  ],
+  "links": 148,
+  "bytes": 8344
+ },
+ {
+  "url": "https://zyscj.com/zy/study/knowledge.html",
+  "path": "/zy/study/knowledge.html",
+  "file": "docs/zy/study/knowledge.md",
+  "title": "🔗知识科普站",
+  "h2": [],
+  "links": 73,
+  "bytes": 3970
+ },
+ {
+  "url": "https://zyscj.com/zy/study/mindmap.html",
+  "path": "/zy/study/mindmap.html",
+  "file": "docs/zy/study/mindmap.md",
+  "title": "🔗思维导图与笔记",
+  "h2": [
+   "[思维导图](#思维导图)",
+   "[笔记](#笔记)",
+   "[写作/Markdown](#写作-markdown)",
+   "[稍后阅读](#稍后阅读)"
+  ],
+  "links": 66,
+  "bytes": 4574
+ },
+ {
+  "url": "https://zyscj.com/zy/study/mirror.html",
+  "path": "/zy/study/mirror.html",
+  "file": "docs/zy/study/mirror.md",
+  "title": "🔗各种学习镜像站",
+  "h2": [
+   "[Github访问](#github访问)",
+   "[Sci-Hub](#sci-hub)",
+   "[谷歌学术/谷歌镜像](#谷歌学术-谷歌镜像)"
+  ],
+  "links": 30,
+  "bytes": 1941
+ },
+ {
+  "url": "https://zyscj.com/zy/study/onlinecourse.html",
+  "path": "/zy/study/onlinecourse.html",
+  "file": "docs/zy/study/onlinecourse.md",
+  "title": "🔗在线课堂与刷课",
+  "h2": [
+   "[在线课堂](#在线课堂)"
+  ],
+  "links": 21,
+  "bytes": 1187
+ },
+ {
+  "url": "https://zyscj.com/zy/study/paper.html",
+  "path": "/zy/study/paper.html",
+  "file": "docs/zy/study/paper.md",
+  "title": "🔗论文+查重降重",
+  "h2": [
+   "[论文下载](#论文下载)",
+   "[论文查重降重](#论文查重降重)"
+  ],
+  "links": 51,
+  "bytes": 3962
+ },
+ {
+  "url": "https://zyscj.com/zy/study/psychology.html",
+  "path": "/zy/study/psychology.html",
+  "file": "docs/zy/study/psychology.md",
+  "title": "🔗各类心理等测试",
+  "h2": [],
+  "links": 29,
+  "bytes": 2225
+ },
+ {
+  "url": "https://zyscj.com/zy/study/",
+  "path": "/zy/study/",
+  "file": "docs/zy/study/index.md",
+  "title": "学习教育",
+  "h2": [],
+  "links": 0,
+  "bytes": 0
+ },
+ {
+  "url": "https://zyscj.com/zy/study/textbook.html",
+  "path": "/zy/study/textbook.html",
+  "file": "docs/zy/study/textbook.md",
+  "title": "🔗电子课本下载",
+  "h2": [
+   "[课程学习](#课程学习)",
+   "[课本下载](#课本下载)",
+   "[查题找答案](#查题找答案)"
+  ],
+  "links": 23,
+  "bytes": 1248
+ },
+ {
+  "url": "https://zyscj.com/zy/study/wenku.html",
+  "path": "/zy/study/wenku.html",
+  "file": "docs/zy/study/wenku.md",
+  "title": "🔗百度文库下载",
+  "h2": [
+   "[文库下载](#文库下载)"
+  ],
+  "links": 11,
+  "bytes": 1330
+ },
+ {
+  "url": "https://zyscj.com/zy/video/anime.html",
+  "path": "/zy/video/anime.html",
+  "file": "docs/zy/video/anime.md",
+  "title": "🔗动漫网站与下载",
+  "h2": [
+   "[动漫站](#动漫站)",
+   "[BT种Z下载](#bt种z下载)"
+  ],
+  "links": 19,
+  "bytes": 892
+ },
+ {
+  "url": "https://zyscj.com/zy/video/bilidownload.html",
+  "path": "/zy/video/bilidownload.html",
+  "file": "docs/zy/video/bilidownload.md",
+  "title": "🔗各种视频下载",
+  "h2": [
+   "[B站视频下载/增强](#b站视频下载-增强)",
+   "[视频号/公众号下载](#视频号-公众号下载)",
+   "[小红书下载](#小红书下载)",
+   "[YouTube视频下载](#youtube视频下载)",
+   "[其他国外视频下载](#其他国外视频下载)",
+   "[在线视频下载-M3U8软件](#在线视频下载-m3u8软件)"
+  ],
+  "links": 54,
+  "bytes": 4464
+ },
+ {
+  "url": "https://zyscj.com/zy/video/documentary.html",
+  "path": "/zy/video/documentary.html",
+  "file": "docs/zy/video/documentary.md",
+  "title": "🔗纪录片合集",
+  "h2": [
+   "[在线网站](#在线网站)"
+  ],
+  "links": 34,
+  "bytes": 2732
+ },
+ {
+  "url": "https://zyscj.com/zy/video/HDvideo.html",
+  "path": "/zy/video/HDvideo.html",
+  "file": "docs/zy/video/HDvideo.md",
+  "title": "🔗高清4K影视下载",
+  "h2": [
+   "[网盘下载](#网盘下载)",
+   "[高清下载](#高清下载)",
+   "[4K下载](#_4k下载)"
+  ],
+  "links": 44,
+  "bytes": 2074
+ },
+ {
+  "url": "https://zyscj.com/zy/video/onlinevideo.html",
+  "path": "/zy/video/onlinevideo.html",
+  "file": "docs/zy/video/onlinevideo.md",
+  "title": "🔒在线影视精选",
+  "h2": [
+   "[综合在线网站](#综合在线网站)",
+   "[影视搜索](#影视搜索)"
+  ],
+  "links": 10,
+  "bytes": 485
+ },
+ {
+  "url": "https://zyscj.com/zy/video/",
+  "path": "/zy/video/",
+  "file": "docs/zy/video/index.md",
+  "title": "视频直播",
+  "h2": [],
+  "links": 0,
+  "bytes": 0
+ },
+ {
+  "url": "https://zyscj.com/zy/video/subtitle.html",
+  "path": "/zy/video/subtitle.html",
+  "file": "docs/zy/video/subtitle.md",
+  "title": "🔗字幕组翻译",
+  "h2": [
+   "[国内字幕组](#国内字幕组)",
+   "[动漫字幕组](#动漫字幕组)",
+   "[国外字幕组](#国外字幕组)",
+   "[字幕遮挡](#字幕遮挡)"
+  ],
+  "links": 27,
+  "bytes": 1416
+ },
+ {
+  "url": "https://zyscj.com/zy/video/tv.html",
+  "path": "/zy/video/tv.html",
+  "file": "docs/zy/video/tv.md",
+  "title": "🔗TV盒子与直播",
+  "h2": [
+   "[电视盒子软件](#电视盒子软件)",
+   "[电视直播网站](#电视直播网站)",
+   "[直播源](#直播源)",
+   "[直播录制](#直播录制)",
+   "[体育直播](#体育直播)"
+  ],
+  "links": 58,
+  "bytes": 3200
+ },
+ {
+  "url": "https://zyscj.com/zy/video/videoparse.html",
+  "path": "/zy/video/videoparse.html",
+  "file": "docs/zy/video/videoparse.md",
+  "title": "🔗视频解析",
+  "h2": [
+   "[影视解析](#影视解析)",
+   "[短视频解析](#短视频解析)"
+  ],
+  "links": 26,
+  "bytes": 2619
+ },
+ {
+  "url": "https://zyscj.com/zy/video/videosoft.html",
+  "path": "/zy/video/videosoft.html",
+  "file": "docs/zy/video/videosoft.md",
+  "title": "🔗免费影视软件",
+  "h2": [
+   "[在线聚合类](#在线聚合类)",
+   "[安卓视频软件破解资源](#安卓视频软件破解资源)"
+  ],
+  "links": 15,
+  "bytes": 1145
+ },
+ {
+  "url": "https://zyscj.com/zy/tool/imagetool/avatar.html",
+  "path": "/zy/tool/imagetool/avatar.html",
+  "file": "docs/zy/tool/imagetool/avatar.md",
+  "title": "🔗在线头像生成器",
+  "h2": [],
+  "links": 16,
+  "bytes": 559
+ },
+ {
+  "url": "https://zyscj.com/zy/tool/imagetool/favicon.html",
+  "path": "/zy/tool/imagetool/favicon.html",
+  "file": "docs/zy/tool/imagetool/favicon.md",
+  "title": "🔗网站favicon图标下载",
+  "h2": [
+   "[0.网页插件](#_0-网页插件)",
+   "[1.网站下载](#_1-网站下载)",
+   "[2.直接访问favicon地址获取ico文件](#_2-直接访问favicon地址获取ico文件)",
+   "[3.使用API获取网站favicon](#_3-使用api获取网站favicon)"
+  ],
+  "links": 5,
+  "bytes": 1308
+ },
+ {
+  "url": "https://zyscj.com/zy/tool/imagetool/gif.html",
+  "path": "/zy/tool/imagetool/gif.html",
+  "file": "docs/zy/tool/imagetool/gif.md",
+  "title": "🔗表情包与GIF",
+  "h2": [
+   "[GIF](#gif)"
+  ],
+  "links": 34,
+  "bytes": 1851
+ },
+ {
+  "url": "https://zyscj.com/zy/tool/imagetool/imagesearch.html",
+  "path": "/zy/tool/imagetool/imagesearch.html",
+  "file": "docs/zy/tool/imagetool/imagesearch.md",
+  "title": "🔗以图搜图(识图)",
+  "h2": [
+   "[综合识图](#综合识图)",
+   "[二次元识图](#二次元识图)",
+   "[其他识图](#其他识图)"
+  ],
+  "links": 21,
+  "bytes": 1557
+ },
+ {
+  "url": "https://zyscj.com/zy/tool/imagetool/piccompress.html",
+  "path": "/zy/tool/imagetool/piccompress.html",
+  "file": "docs/zy/tool/imagetool/piccompress.md",
+  "title": "🔗图片压缩+软件",
+  "h2": [
+   "[在线图片压缩](#在线图片压缩)",
+   "[图片压缩软件](#图片压缩软件)"
+  ],
+  "links": 18,
+  "bytes": 1100
+ },
+ {
+  "url": "https://zyscj.com/zy/tool/imagetool/picedit.html",
+  "path": "/zy/tool/imagetool/picedit.html",
+  "file": "docs/zy/tool/imagetool/picedit.md",
+  "title": "🔗图片编辑处理",
+  "h2": [
+   "[在线设计](#在线设计)",
+   "[图片编辑与查看](#图片编辑与查看)"
+  ],
+  "links": 29,
+  "bytes": 1783
+ },
+ {
+  "url": "https://zyscj.com/zy/tool/imagetool/picupload.html",
+  "path": "/zy/tool/imagetool/picupload.html",
+  "file": "docs/zy/tool/imagetool/picupload.md",
+  "title": "🔗免费图床网站",
+  "h2": [],
+  "links": 8,
+  "bytes": 616
+ },
+ {
+  "url": "https://zyscj.com/zy/tool/imagetool/PS.html",
+  "path": "/zy/tool/imagetool/PS.html",
+  "file": "docs/zy/tool/imagetool/PS.md",
+  "title": "🔗PS在线编辑+抠图",
+  "h2": [
+   "[在线PS](#在线ps)",
+   "[在线抠图](#在线抠图)"
+  ],
+  "links": 29,
+  "bytes": 1430
+ },
+ {
+  "url": "https://zyscj.com/zy/tool/imagetool/",
+  "path": "/zy/tool/imagetool/",
+  "file": "docs/zy/tool/imagetool/index.md",
+  "title": "图片工具",
+  "h2": [],
+  "links": 0,
+  "bytes": 0
+ },
+ {
+  "url": "https://zyscj.com/zy/tool/imagetool/wordcloud.html",
+  "path": "/zy/tool/imagetool/wordcloud.html",
+  "file": "docs/zy/tool/imagetool/wordcloud.md",
+  "title": "🔗词云制作",
+  "h2": [],
+  "links": 11,
+  "bytes": 407
+ }
+]
