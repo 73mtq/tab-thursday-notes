@@ -121,9 +121,10 @@
 
 [在线阅读](https://73mtq.github.io/tab-thursday-notes/) 由仓库 `docs/` 目录通过 GitHub Pages 发布（分支 `main` / 目录 `/docs`）。站点提供：
 
-- **首页**：两期入口、第二期按主题与按分享者的快速跳转；
+- **首页**：两期入口、第二期按主题跳转，以及 39 位分享者的**主页 + 项目链接索引**（每张卡片可跳本站精读章节，也可直达外部站点）；
+- **章节内**：每章顶部列出该分享者的主页、介绍的项目、源码、幻灯片、样片等链接，取自官方汇总页；官方没给的会如实标注；
 - **文章页**：粘性侧栏目录（可按分享者姓名筛选、`Ctrl/⌘ + K` 定位）、章节锚点、阅读进度条、返回顶部；
-- **跳转**：全部外部链接在新标签页打开，两期附录中的裸域名也已转成可点击链接。
+- **跳转**：全部外部链接在新标签页打开，两期附录中的裸域名也已转成可点击链接；地址误带 `**` 等字符时 404 页会自动跳回首页。
 
 本地重建：
 
@@ -132,7 +133,14 @@ python -m pip install markdown
 python .\build_site.py
 ```
 
-`build_site.py` 读取仓库根目录的两份 Markdown，生成 `docs/` 下的 HTML、CSS、JS 与 `.nojekyll`。新增期数时修改脚本顶部的 `ISSUES` 配置即可；改动 Markdown 后先重建再提交，站点会自动更新。
+`build_site.py` 读取仓库根目录的两份 Markdown 与 `links.json`，生成 `docs/` 下的 HTML、CSS、JS、`404.html` 与 `.nojekyll`。`links.json` 由 `refresh_links.py` 从官方汇总页抓取并按人结构化（主页 / 项目链接），已随仓库提交，因此构建过程完全离线；官方发布新一期或链接有变动时才需要重跑：
+
+```powershell
+python .\refresh_links.py
+python .\build_site.py
+```
+
+新增期数时还需修改 `build_site.py` 顶部的 `ISSUES` 与 `refresh_links.py` 的 `PAGES` 配置。改动 Markdown 后先重建再提交，站点会自动更新。
 
 ## 更新记录
 
@@ -141,3 +149,4 @@ python .\build_site.py
 | 2026-10-30 | 初版：18 章正文 + 横向总结 + 事实边界说明 |
 | 2026-11-09 | 新增第二期精读文档（21 章 + 跨期对照）；首页改为两期索引，并按官方 about 页校正活动时间与规则 |
 | 2026-11-09 | 新增 GitHub Pages 静态站点：两期全文 + 首页跳转 + 目录筛选 + 外链可点击；构建脚本 `build_site.py` |
+| 2026-11-09 | 新增 39 位分享者主页 / 项目链接索引（`links.json` + `refresh_links.py`），首页卡片与每章顶部链接条可跳转 |

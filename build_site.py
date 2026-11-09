@@ -12,6 +12,7 @@ self-contained static site into docs/. GitHub Pages is configured to serve
 from __future__ import annotations
 
 import html
+import json
 import re
 import unicodedata
 from pathlib import Path
@@ -22,6 +23,7 @@ import markdown
 ROOT = Path(__file__).resolve().parent
 DOCS = ROOT / "docs"
 ASSETS = DOCS / "assets"
+LINKS_FILE = ROOT / "links.json"
 
 REPO_URL = "https://github.com/73mtq/tab-thursday-notes"
 SITE_URL = "https://73mtq.github.io/tab-thursday-notes/"
@@ -183,8 +185,27 @@ button,input{font-family:inherit}
   .content{padding:24px 16px 40px}
   .prose table{font-size:12.8px}
 }
+.people-cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:14px}
+.person-card{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:16px 17px;display:flex;flex-direction:column}
+.person-head{display:flex;align-items:baseline;gap:8px;margin-bottom:4px}
+.person-name{font-size:14.5px;font-weight:500;color:var(--ink)}
+.person-name:hover{color:var(--blue);text-decoration:none}
+.person-num{color:var(--blue);font-size:12px}
+.person-topic{font-size:12px;color:var(--faint);margin:0 0 11px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.chips{display:flex;flex-wrap:wrap;gap:7px}
+.chip{display:inline-block;font-size:12.2px;line-height:1.5;padding:4px 9px;border:1px solid var(--line2);border-radius:20px;color:var(--muted);background:var(--bg);max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;vertical-align:middle}
+.chip:hover{border-color:var(--blue);color:var(--blue);text-decoration:none;background:var(--blue50)}
+.chip.home{border-color:#b5d4f4;color:#0c447c;background:var(--blue50)}
+.chip::after{content:" \2197";font-size:.8em;color:var(--faint)}
+.no-links{font-size:12px;color:var(--faint)}
+.read-link{display:inline-block;margin-top:11px;font-size:12.3px;align-self:flex-start}
+.index-note{font-size:13px;color:var(--muted);margin:-6px 0 16px}
+.inline-links{margin:14px 0 20px;padding:11px 13px;background:#fafbfd;border:1px solid var(--line);border-radius:9px;display:flex;flex-wrap:wrap;align-items:center;gap:7px}
+.inline-label{font-size:11.8px;color:var(--faint);margin-right:4px}
+.issue-sub{font-size:14px;color:var(--muted);margin:26px 0 12px;font-weight:500}
+
 @media print{
-  .topbar,.sidebar,.to-top,#progress,.article-foot{display:none!important}
+  .topbar,.sidebar,.to-top,#progress,.article-foot,.inline-links{display:none!important}
   .layout{display:block;padding:0}
   .content{border:0;padding:0}
   body{background:#fff}
@@ -350,9 +371,15 @@ HOME_TPL = r"""<!doctype html>
 {{QUICK}}
   </section>
 
-  <h2 class="section-title">第二期 · 按分享者跳转</h2>
-  <section class="people-grid">
-{{PEOPLE}}
+  <h2 class="section-title">分享者与项目链接</h2>
+  <p class="index-note">按官方汇总页整理：每位分享者的个人主页，以及他介绍的项目、源码、幻灯片等链接。点姓名进入本站精读章节，点标签跳转外部站点（新标签页打开）。没有主页或项目链接的分享者会如实标注。</p>
+  <div class="issue-sub">第一期 · 18 位分享者</div>
+  <section class="people-cards">
+{{INDEX_001}}
+  </section>
+  <div class="issue-sub">第二期 · 21 位分享者</div>
+  <section class="people-cards">
+{{INDEX_002}}
   </section>
 
   <div class="site-foot">
@@ -514,6 +541,82 @@ def render(tpl: str, **kv) -> str:
     return tpl
 
 
+def chip_html(link: dict, kind: str = "") -> str:
+    label = html.escape(link["label"])
+    url = html.escape(link["url"], quote=True)
+    prefix = "主页 · " if kind == "home" else ""
+    return (
+        '<a class="chip%s" href="%s" target="_blank" rel="noopener noreferrer" title="%s">%s%s</a>'
+        % (" " + kind if kind else "", url, label, prefix, label)
+    )
+
+
+def chapter_map(heads) -> dict:
+    out = {}
+    for level, hid, title in heads:
+        if level != "2":
+            continue
+        m = re.match(r"^(\d{2})\s+(.+?)\s*[：:]\s*(.+)$", title)
+        if m:
+            out[m.group(1)] = (hid, m.group(3).strip(), title)
+    return out
+
+
+def person_card(idx: int, person: dict, cmap: dict, issue_key: str) -> str:
+    num = "%02d" % idx
+    anchor, topic, full = cmap.get(num, ("", "", ""))
+    name = html.escape(person["name"])
+    href = (
+        "./issue-%s.html#%s" % (issue_key, html.escape(anchor, quote=True))
+        if anchor
+        else "./issue-%s.html" % issue_key
+    )
+    chips = []
+    if person.get("homepage"):
+        chips.append(chip_html(person["homepage"], "home"))
+    chips.extend(chip_html(x) for x in person.get("links", []))
+    chips_html = "".join(chips) or '<span class="no-links">汇总页未附主页或项目链接</span>'
+    return (
+        '    <div class="person-card">\n'
+        '      <div class="person-head"><span class="person-num">%s</span>'
+        '<a class="person-name" href="%s">%s</a></div>\n'
+        '      <p class="person-topic" title="%s">%s</p>\n'
+        '      <div class="chips">%s</div>\n'
+        '      <a class="read-link" href="%s">阅读精读 →</a>\n'
+        '    </div>'
+        % (num, href, name, html.escape(full, quote=True), html.escape(topic), chips_html, href)
+    )
+
+
+def inject_inline_links(body: str, people: list) -> str:
+    by_name = {p["name"]: p for p in people}
+
+    def repl(m):
+        num, name = m.group(1), m.group(2).strip()
+        person = by_name.get(name)
+        if person is None:
+            i = int(num) - 1
+            person = people[i] if 0 <= i < len(people) else None
+        if person is None:
+            return m.group(0)
+        chips = []
+        if person.get("homepage"):
+            chips.append(chip_html(person["homepage"], "home"))
+        chips.extend(chip_html(x) for x in person.get("links", []))
+        if not chips:
+            return m.group(0)
+        return (
+            m.group(0)
+            + '\n<div class="inline-links"><span class="inline-label">相关链接</span>'
+            + "".join(chips)
+            + "</div>"
+        )
+
+    return re.sub(
+        r'<h2 id="[^"]+">(\d{2})\s+([^：<]+)[：:][^<]*</h2>', repl, body
+    )
+
+
 def main() -> None:
     DOCS.mkdir(exist_ok=True)
     ASSETS.mkdir(exist_ok=True)
@@ -522,9 +625,19 @@ def main() -> None:
     (ASSETS / "style.css").write_text(CSS, encoding="utf-8")
     (ASSETS / "app.js").write_text(JS, encoding="utf-8")
 
+    links = (
+        json.loads(LINKS_FILE.read_text(encoding="utf-8"))
+        if LINKS_FILE.exists()
+        else {}
+    )
+
     converted = {}
     for issue in ISSUES:
         body, heads = convert(ROOT / issue["src"], linkify=True)
+        people = links.get(issue["key"], [])
+        if people:
+            body = inject_inline_links(body, people)
+            print("  issue %s: link bars injected for %d sharers" % (issue["key"], len(people)))
         converted[issue["key"]] = (body, heads)
 
         other = "issue-001.html" if issue["key"] == "002" else "issue-002.html"
@@ -548,7 +661,7 @@ def main() -> None:
         out.write_text(page, encoding="utf-8")
         print("wrote %-28s %7d bytes  (%d headings)" % (out.name, out.stat().st_size, len(heads)))
 
-    cards, quick, people = [], [], []
+    cards, quick = [], []
     for issue in ISSUES:
         bullets = "\n".join("        <li>%s</li>" % html.escape(b) for b in issue["bullets"])
         cards.append(
@@ -584,29 +697,29 @@ def main() -> None:
                 '    <a href="./issue-002.html#%s">%s<small>第 %d 部分</small></a>'
                 % (html.escape(hid, quote=True), html.escape(title), part_no)
             )
-    for level, hid, title in heads2:
-        if level == "2" and re.match(r"^\d{2} ", title):
-            num, _, name = title.partition(" ")
-            people.append(
-                '    <a href="./issue-002.html#%s" title="%s"><b>%s</b>%s</a>'
-                % (
-                    html.escape(hid, quote=True),
-                    html.escape(title, quote=True),
-                    html.escape(num),
-                    html.escape(name.split("：")[0]),
-                )
-            )
+    index_blocks = {}
+    for issue in ISSUES:
+        key = issue["key"]
+        _, heads = converted[key]
+        cmap = chapter_map(heads)
+        entries = links.get(key, [])
+        index_blocks[key] = "\n".join(
+            person_card(i, p, cmap, key) for i, p in enumerate(entries, 1)
+        )
+        print("  issue %s: %d sharer cards, %d chapter anchors" % (key, len(entries), len(cmap)))
 
     home = render(
         HOME_TPL,
         REPO=REPO_URL,
         CARDS="\n".join(cards),
         QUICK="\n".join(quick),
-        PEOPLE="\n".join(people),
+        INDEX_001=index_blocks.get("001", ""),
+        INDEX_002=index_blocks.get("002", ""),
     )
     (DOCS / "index.html").write_text(home, encoding="utf-8")
-    print("wrote %-28s %7d bytes  (%d parts, %d people)" % (
-        "index.html", (DOCS / "index.html").stat().st_size, len(quick), len(people)
+    total_cards = sum(len(links.get(k, [])) for k in ("001", "002"))
+    print("wrote %-28s %7d bytes  (%d parts, %d sharer cards)" % (
+        "index.html", (DOCS / "index.html").stat().st_size, len(quick), total_cards
     ))
     print("\nPreview locally:  open docs/index.html")
     print("After push:       " + SITE_URL)

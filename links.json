@@ -1,0 +1,511 @@
+{
+  "001": [
+    {
+      "name": "Owen",
+      "homepage": {
+        "label": "owenyoung.com",
+        "url": "http://owenyoung.com"
+      },
+      "links": [
+        {
+          "label": "Good Enough",
+          "url": "https://goodenough.us"
+        }
+      ]
+    },
+    {
+      "name": "David Jiang",
+      "homepage": {
+        "label": "dj.theory-a.com",
+        "url": "http://dj.theory-a.com"
+      },
+      "links": [
+        {
+          "label": "语言星系",
+          "url": "https://glove.theory-a.com"
+        }
+      ]
+    },
+    {
+      "name": "Junwei",
+      "homepage": null,
+      "links": [
+        {
+          "label": "一句话生成和编辑 3D 场景",
+          "url": "https://junwei.cool"
+        }
+      ]
+    },
+    {
+      "name": "Gloria X",
+      "homepage": null,
+      "links": [
+        {
+          "label": "Ego Lite",
+          "url": "https://lite.ego.app/zh-cn"
+        }
+      ]
+    },
+    {
+      "name": "花卷",
+      "homepage": {
+        "label": "okjk.co/d7Hm5n",
+        "url": "http://okjk.co/d7Hm5n"
+      },
+      "links": [
+        {
+          "label": "播客封面展示网站",
+          "url": "https://podcasts-stamp.depykung.app"
+        }
+      ]
+    },
+    {
+      "name": "yytyyf",
+      "homepage": {
+        "label": "yytyyf.com",
+        "url": "http://yytyyf.com"
+      },
+      "links": [
+        {
+          "label": "OpenTrends",
+          "url": "https://opentrends.io/zh"
+        },
+        {
+          "label": "KeyKeeper",
+          "url": "https://keykeeper.dev"
+        }
+      ]
+    },
+    {
+      "name": "海涛",
+      "homepage": {
+        "label": "haitao.wiki",
+        "url": "http://haitao.wiki"
+      },
+      "links": [
+        {
+          "label": "iPhone Use Pro",
+          "url": "https://github.com/Openhaitao/iphone-use-pro"
+        }
+      ]
+    },
+    {
+      "name": "Cassie",
+      "homepage": {
+        "label": "github.com/cassieliang6709",
+        "url": "http://github.com/cassieliang6709"
+      },
+      "links": []
+    },
+    {
+      "name": "CC",
+      "homepage": {
+        "label": "xlrocket.blog",
+        "url": "http://xlrocket.blog"
+      },
+      "links": []
+    },
+    {
+      "name": "Edward Luo",
+      "homepage": {
+        "label": "jike.city/edwardluo",
+        "url": "http://jike.city/edwardluo"
+      },
+      "links": [
+        {
+          "label": "Klack",
+          "url": "https://tryklack.com"
+        },
+        {
+          "label": "视频 1",
+          "url": "https://www.youtube.com/watch?v=1XxNXkOHKZw"
+        },
+        {
+          "label": "视频 2",
+          "url": "https://www.youtube.com/watch?v=V95nfAEXlZ4"
+        }
+      ]
+    },
+    {
+      "name": "Sideway",
+      "homepage": {
+        "label": "小红书",
+        "url": "https://www.xiaohongshu.com/user/profile/60ba52ba0000000001008d5d"
+      },
+      "links": [
+        {
+          "label": "PixPet",
+          "url": "https://pixpet.com.cn"
+        },
+        {
+          "label": "JoyBoy.Club",
+          "url": "http://JoyBoy.Club"
+        }
+      ]
+    },
+    {
+      "name": "以陈",
+      "homepage": {
+        "label": "xhslink.cn/o/6CdhpsGK4H7",
+        "url": "http://xhslink.cn/o/6CdhpsGK4H7"
+      },
+      "links": []
+    },
+    {
+      "name": "勾以",
+      "homepage": {
+        "label": "xhslink.cn/o/7r96tyl9HsH",
+        "url": "http://xhslink.cn/o/7r96tyl9HsH"
+      },
+      "links": [
+        {
+          "label": "味觉数字孪生",
+          "url": "https://askyumi.com"
+        }
+      ]
+    },
+    {
+      "name": "Wentao",
+      "homepage": {
+        "label": "okjk.co/lgM9bS",
+        "url": "http://okjk.co/lgM9bS"
+      },
+      "links": []
+    },
+    {
+      "name": "草原张",
+      "homepage": {
+        "label": "jike.city/galaxy",
+        "url": "http://jike.city/galaxy"
+      },
+      "links": [
+        {
+          "label": "weread.koplugin",
+          "url": "https://github.com/finlater/weread.koplugin"
+        }
+      ]
+    },
+    {
+      "name": "冯中",
+      "homepage": null,
+      "links": []
+    },
+    {
+      "name": "天天",
+      "homepage": {
+        "label": "okjk.co/ojWTx1",
+        "url": "http://okjk.co/ojWTx1"
+      },
+      "links": []
+    },
+    {
+      "name": "imxiaorong",
+      "homepage": {
+        "label": "okjk.co/NwGumt",
+        "url": "http://okjk.co/NwGumt"
+      },
+      "links": []
+    }
+  ],
+  "002": [
+    {
+      "name": "海涛",
+      "homepage": {
+        "label": "haitao.wiki",
+        "url": "https://haitao.wiki/"
+      },
+      "links": [
+        {
+          "label": "Comma",
+          "url": "https://comma.surf/"
+        },
+        {
+          "label": "源码",
+          "url": "https://github.com/AFK-surf/Comma"
+        }
+      ]
+    },
+    {
+      "name": "雨杭",
+      "homepage": {
+        "label": "okjk.co/hC0GE1",
+        "url": "https://okjk.co/hC0GE1"
+      },
+      "links": []
+    },
+    {
+      "name": "Lucky",
+      "homepage": {
+        "label": "okjk.co/eYNusZ",
+        "url": "https://okjk.co/eYNusZ"
+      },
+      "links": [
+        {
+          "label": "播客",
+          "url": "https://www.youtube.com/watch?v=_QSX3BF9UX0"
+        }
+      ]
+    },
+    {
+      "name": "杨云童",
+      "homepage": {
+        "label": "yytyyf.com",
+        "url": "https://yytyyf.com"
+      },
+      "links": [
+        {
+          "label": "Bob",
+          "url": "https://bobtranslate.com/"
+        }
+      ]
+    },
+    {
+      "name": "CC",
+      "homepage": {
+        "label": "xlrocket.blog",
+        "url": "https://xlrocket.blog"
+      },
+      "links": [
+        {
+          "label": "Occupy SaaS",
+          "url": "https://github.com/occupysaas"
+        }
+      ]
+    },
+    {
+      "name": "小禾",
+      "homepage": {
+        "label": "project-e9844dc2.eazo.dev",
+        "url": "https://project-e9844dc2.eazo.dev/"
+      },
+      "links": [
+        {
+          "label": "医桥中国",
+          "url": "https://project-f73d2085.eazo.dev/"
+        }
+      ]
+    },
+    {
+      "name": "草原张",
+      "homepage": {
+        "label": "jike.city/galaxy",
+        "url": "https://jike.city/galaxy"
+      },
+      "links": [
+        {
+          "label": "Gesture Synth",
+          "url": "https://gesture-synth-weld.vercel.app/"
+        },
+        {
+          "label": "源码",
+          "url": "https://github.com/ericwei97-cloud/gesture-synth"
+        }
+      ]
+    },
+    {
+      "name": "JJ Ying",
+      "homepage": {
+        "label": "twitter.com/jjying",
+        "url": "https://twitter.com/jjying"
+      },
+      "links": [
+        {
+          "label": "幻灯片",
+          "url": "https://anyway.fm/fonts/tab/"
+        }
+      ]
+    },
+    {
+      "name": "陈雅娜",
+      "homepage": {
+        "label": "xhslink.cn/o/3v8TE31vl4g",
+        "url": "https://xhslink.cn/o/3v8TE31vl4g"
+      },
+      "links": [
+        {
+          "label": "1K",
+          "url": "https://sidewave.link/1k/surface"
+        }
+      ]
+    },
+    {
+      "name": "Owen",
+      "homepage": {
+        "label": "owenyoung.com",
+        "url": "https://www.owenyoung.com/"
+      },
+      "links": [
+        {
+          "label": "NetNewsWire",
+          "url": "https://netnewswire.com"
+        },
+        {
+          "label": "Miniflux",
+          "url": "https://miniflux.app/"
+        }
+      ]
+    },
+    {
+      "name": "David Jiang",
+      "homepage": {
+        "label": "dj.theory-a.com",
+        "url": "https://dj.theory-a.com"
+      },
+      "links": [
+        {
+          "label": "孩子要学的一切",
+          "url": "https://curriculum.theory-a.com/"
+        }
+      ]
+    },
+    {
+      "name": "Cassie",
+      "homepage": {
+        "label": "github.com/cassieliang6709",
+        "url": "https://github.com/cassieliang6709"
+      },
+      "links": [
+        {
+          "label": "NudgeCode",
+          "url": "https://nudgecode.liangyue.site/roadmap/array/learn"
+        },
+        {
+          "label": "样片",
+          "url": "https://www.bilibili.com/video/BV1QXHN6ZE3K/"
+        },
+        {
+          "label": "custombili",
+          "url": "https://custombili.liangyue.site/"
+        }
+      ]
+    },
+    {
+      "name": "奚圣波",
+      "homepage": {
+        "label": "x.com/xishengbo",
+        "url": "https://x.com/xishengbo"
+      },
+      "links": [
+        {
+          "label": "绘页",
+          "url": "https://huiye.org/zh"
+        },
+        {
+          "label": "教程",
+          "url": "https://x.com/geektao0319/status/2117581259115250035"
+        }
+      ]
+    },
+    {
+      "name": "胡敬亭",
+      "homepage": {
+        "label": "okjk.co/3qic9O",
+        "url": "https://okjk.co/3qic9O"
+      },
+      "links": [
+        {
+          "label": "EmojiFuse",
+          "url": "https://emojimix.brucehjt.workers.dev/"
+        },
+        {
+          "label": "源码",
+          "url": "https://github.com/hujingting"
+        }
+      ]
+    },
+    {
+      "name": "Peter Lei",
+      "homepage": {
+        "label": "github.com/Peterleixx",
+        "url": "https://github.com/Peterleixx"
+      },
+      "links": []
+    },
+    {
+      "name": "Colleen",
+      "homepage": {
+        "label": "linkedin.com/in/kejing-y",
+        "url": "https://www.linkedin.com/in/kejing-y"
+      },
+      "links": [
+        {
+          "label": "SpringBrand",
+          "url": "https://springbrand.ai/"
+        },
+        {
+          "label": "报告",
+          "url": "https://springbrand.ai/research/teamily/"
+        }
+      ]
+    },
+    {
+      "name": "司马光砸缸",
+      "homepage": {
+        "label": "okjk.co/f9FyNU",
+        "url": "https://okjk.co/f9FyNU"
+      },
+      "links": [
+        {
+          "label": "提示词",
+          "url": "https://smg.fm/1105"
+        }
+      ]
+    },
+    {
+      "name": "0xinhua",
+      "homepage": {
+        "label": "x.com/0xinhua",
+        "url": "https://x.com/0xinhua"
+      },
+      "links": [
+        {
+          "label": "TwitterShots",
+          "url": "https://twittershots.com"
+        },
+        {
+          "label": "PostPiper",
+          "url": "https://www.postpiper.ai"
+        }
+      ]
+    },
+    {
+      "name": "Sean Shao",
+      "homepage": {
+        "label": "x.com/hopsken",
+        "url": "https://x.com/hopsken"
+      },
+      "links": [
+        {
+          "label": "幻灯片",
+          "url": "https://tab-002-prompt-jadd.pages.grok.bot/"
+        }
+      ]
+    },
+    {
+      "name": "Hao",
+      "homepage": {
+        "label": "goodinsight.ai",
+        "url": "https://www.goodinsight.ai"
+      },
+      "links": [
+        {
+          "label": "Brand Logo Finder",
+          "url": "https://github.com/haopsy/brand-logo-finder"
+        }
+      ]
+    },
+    {
+      "name": "Yorkson",
+      "homepage": {
+        "label": "blog.yorks0n.com",
+        "url": "https://blog.yorks0n.com/"
+      },
+      "links": [
+        {
+          "label": "ZotWatch",
+          "url": "https://github.com/Yorks0n/ZotWatch"
+        }
+      ]
+    }
+  ]
+}
