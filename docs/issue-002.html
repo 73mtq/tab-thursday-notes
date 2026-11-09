@@ -18,11 +18,13 @@
     <a href="https://tabthursday.com/notes" target="_blank" rel="noopener noreferrer">官方汇总</a>
     <a href="https://github.com/73mtq/tab-thursday-notes" target="_blank" rel="noopener noreferrer">GitHub</a>
   </nav>
-  <button class="menu-toggle" id="menuToggle" type="button">目录</button>
+  <button class="menu-toggle" id="menuToggle" type="button" aria-controls="sidebar" aria-expanded="false">目录</button>
 </header>
+<div class="scrim" id="scrim"></div>
 <div class="layout">
-  <aside class="sidebar" id="sidebar">
+  <aside class="sidebar" id="sidebar" aria-label="章节目录">
     <div class="sidebar-head">
+      <button class="drawer-close" id="drawerClose" type="button" aria-label="关闭目录">×</button>
       <div class="sidebar-title">目录 · 第二期</div>
       <input class="filter" id="tocFilter" type="search" placeholder="筛选章节 / 分享者" autocomplete="off">
       <div class="filter-hint">Ctrl / ⌘ + K 快速定位</div>
@@ -1348,6 +1350,7 @@
     </div>
   </main>
 </div>
+<button class="toc-fab" id="tocFab" type="button" aria-controls="sidebar" aria-expanded="false" aria-label="打开章节目录"><span class="toc-fab-icon" aria-hidden="true"><i></i><i></i><i></i></span><span>目录</span></button>
 <button class="to-top" id="toTop" type="button" aria-label="返回顶部">↑</button>
 <script src="./assets/app.js"></script>
 </body>

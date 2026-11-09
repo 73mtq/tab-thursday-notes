@@ -5,13 +5,34 @@
   var progress=document.getElementById('progress');
   var toTop=document.getElementById('toTop');
   var toggle=document.getElementById('menuToggle');
+  var fab=document.getElementById('tocFab');
+  var scrim=document.getElementById('scrim');
+  var drawerClose=document.getElementById('drawerClose');
   var sidebar=document.getElementById('sidebar');
+  var triggers=[toggle,fab].filter(Boolean);
+  var mobile=window.matchMedia('(max-width:960px)');
 
-  if(toggle&&sidebar){
-    toggle.addEventListener('click',function(){sidebar.classList.toggle('open');});
-    document.addEventListener('keydown',function(e){if(e.key==='Escape')sidebar.classList.remove('open');});
-    if(toc)toc.addEventListener('click',function(e){if(e.target.closest('a'))sidebar.classList.remove('open');});
+  function setDrawer(open,returnFocus){
+    if(!sidebar)return;
+    sidebar.classList.toggle('open',open);
+    if(scrim)scrim.classList.toggle('show',open);
+    document.body.classList.toggle('nav-open',open&&mobile.matches);
+    for(var i=0;i<triggers.length;i++)triggers[i].setAttribute('aria-expanded',open?'true':'false');
+    if(!open&&returnFocus&&mobile.matches&&fab)fab.focus({preventScroll:true});
   }
+  for(var t=0;t<triggers.length;t++){
+    triggers[t].addEventListener('click',function(){
+      setDrawer(!sidebar.classList.contains('open'),true);
+    });
+  }
+  if(scrim)scrim.addEventListener('click',function(){setDrawer(false,true);});
+  if(drawerClose)drawerClose.addEventListener('click',function(){setDrawer(false,true);});
+  document.addEventListener('keydown',function(e){
+    if(e.key==='Escape')setDrawer(false,true);
+  });
+  if(toc)toc.addEventListener('click',function(e){
+    if(e.target.closest('a'))setDrawer(false,false);
+  });
   if(filter&&toc){
     filter.addEventListener('input',function(){
       var q=this.value.trim().toLowerCase();
@@ -55,4 +76,17 @@
   window.addEventListener('scroll',update,{passive:true});
   window.addEventListener('resize',update);
   update();
+
+  var tables=document.querySelectorAll('.prose table');
+  for(var k=0;k<tables.length;k++){
+    var table=tables[k];
+    var wrap=document.createElement('div');
+    wrap.className='table-wrap';
+    table.parentNode.insertBefore(wrap,table);
+    wrap.appendChild(table);
+    var hint=document.createElement('span');
+    hint.className='table-hint';
+    hint.textContent='左右滑动查看完整表格 →';
+    wrap.appendChild(hint);
+  }
 })();

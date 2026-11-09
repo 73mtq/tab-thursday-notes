@@ -204,6 +204,109 @@ button,input{font-family:inherit}
 .inline-label{font-size:11.8px;color:var(--faint);margin-right:4px}
 .issue-sub{font-size:14px;color:var(--muted);margin:26px 0 12px;font-weight:500}
 
+/* Refinement: quiet archive reader — mobile shell, legibility, a11y */
+:root{
+  --topbar-h:58px;
+  --faint:#6f6e68;
+  --focus:#185fa5;
+  --shadow-md:0 8px 28px rgba(44,44,42,.12);
+  --ease-out:cubic-bezier(.22,.61,.36,1);
+  --ease-in:cubic-bezier(.55,.06,.68,.19);
+}
+html{scroll-padding-top:84px}
+::selection{background:#cfe3f7;color:#0c447c}
+a,button,input{-webkit-tap-highlight-color:transparent}
+:focus-visible{outline:2px solid var(--focus);outline-offset:3px;border-radius:4px}
+.prose h1,.prose h2,.hero h1,.issue-card h2,.section-title{text-wrap:balance}
+.person-num,.issue-no,.issue-meta,.site-foot{font-variant-numeric:tabular-nums}
+.prose table{scrollbar-width:thin;-webkit-overflow-scrolling:touch;overscroll-behavior-x:contain}
+.table-wrap{position:relative;margin:1.3em 0}
+.table-wrap table{margin:0}
+.table-hint{display:none}
+.issue-card.featured{background:#fbfdff;border-color:#c6ddf2;border-left:3px solid var(--blue)}
+.section-title{display:flex;align-items:center;gap:12px}
+.section-title::after{content:"";flex:1;height:1px;background:var(--line)}
+.chip,.quick-grid a,.toc a,.topbar nav a,.to-top,.menu-toggle,.toc-fab,.drawer-close{transition:background-color 150ms var(--ease-out),color 150ms var(--ease-out),border-color 150ms var(--ease-out),transform 80ms var(--ease-out)}
+.chip:active,.quick-grid a:active,.issue-card:active,.to-top:active,.menu-toggle:active,.toc-fab:active{transform:scale(.98)}
+.toc a.active{box-shadow:inset 2px 0 0 var(--blue)}
+.scrim{display:none}
+.toc-fab,.drawer-close{display:none}
+.toc-fab-icon{display:flex;flex-direction:column;justify-content:space-between;width:16px;height:12px;flex:none}
+.toc-fab-icon i{display:block;height:1.5px;background:currentColor;border-radius:1px}
+
+@media (max-width:960px){
+  html{scroll-padding-top:calc(var(--topbar-h) + env(safe-area-inset-top) + 12px)}
+  .topbar{height:calc(var(--topbar-h) + env(safe-area-inset-top));padding-top:env(safe-area-inset-top);padding-left:16px;padding-right:16px;gap:12px}
+  .topbar nav{gap:16px}
+  .topbar nav a{font-size:13px;min-height:44px;display:inline-flex;align-items:center}
+  .menu-toggle{display:none}
+  .layout{display:block;padding:0 0 calc(72px + env(safe-area-inset-bottom))}
+  .content{border:0;border-radius:0;padding:24px 18px 44px;box-shadow:none}
+  .prose{font-size:16.5px;line-height:1.85}
+  .prose>h1:first-child{font-size:25px;line-height:1.4}
+  .prose h1{font-size:21px;margin-top:2.2em}
+  .prose h2{font-size:18.5px;margin-top:2em;padding-left:10px}
+  .prose h3{font-size:16px}
+  .prose blockquote{padding:12px 14px;font-size:14px}
+  .prose table{font-size:13.5px}
+  .prose ul,.prose ol{padding-left:1.4em}
+  .table-hint{display:block;font-size:11.5px;color:var(--faint);margin-top:6px;text-align:right}
+  .sidebar{top:calc(var(--topbar-h) + env(safe-area-inset-top));bottom:0;width:min(320px,88vw);border-radius:0 14px 14px 0;border-left:0;border-top:0;z-index:59;padding-bottom:calc(18px + env(safe-area-inset-bottom));transform:translate3d(-102%,0,0);transition:transform 260ms var(--ease-out);will-change:transform;box-shadow:var(--shadow-md)}
+  .sidebar.open{transform:translate3d(0,0,0)}
+  .scrim{display:block;position:fixed;inset:0;background:rgba(28,27,25,.42);opacity:0;pointer-events:none;transition:opacity 200ms var(--ease-in);z-index:58}
+  .scrim.show{opacity:1;pointer-events:auto}
+  body.nav-open{overflow:hidden}
+  .sidebar-head{position:relative;padding-right:44px}
+  .drawer-close{display:inline-flex;align-items:center;justify-content:center;position:absolute;top:8px;right:8px;width:44px;height:44px;border:0;background:transparent;color:var(--muted);font-size:22px;line-height:1;cursor:pointer;border-radius:8px}
+  .toc a{min-height:44px;display:flex;align-items:center;font-size:13.5px;padding:8px 10px}
+  .toc .toc-item{padding-left:18px}
+  .filter{font-size:16px;min-height:44px}
+  .toc-fab{display:inline-flex;align-items:center;gap:9px;position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom));z-index:57;min-height:48px;padding:0 18px;border:1px solid var(--line2);border-radius:24px;background:var(--surface);color:var(--ink);font-size:13.5px;box-shadow:var(--shadow-md);cursor:pointer}
+  .to-top{right:16px;bottom:calc(80px + env(safe-area-inset-bottom));width:44px;height:44px}
+  .issue-card:hover{transform:none}
+  .home{padding:36px 18px calc(80px + env(safe-area-inset-bottom))}
+  .hero h1{font-size:26px}
+  .hero-links{gap:12px 18px}
+  .issue-grid{grid-template-columns:1fr;gap:14px}
+  .issue-card{padding:22px 20px}
+  .people-cards{grid-template-columns:1fr;gap:10px}
+  .person-card{padding:16px}
+  .chip{min-height:36px;display:inline-flex;align-items:center;padding:6px 12px;font-size:12.8px}
+  .quick-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+  .quick-grid a{min-height:52px;padding:11px 12px;font-size:13px}
+  .inline-links{padding:10px 11px;gap:7px}
+  .read-link{min-height:36px;display:inline-flex;align-items:center}
+}
+@media (max-width:560px){
+  .topbar nav a:nth-child(1),.topbar nav a:nth-child(4),.topbar nav a:nth-child(5){display:none}
+  .hero h1{font-size:24px}
+  .prose{font-size:16px}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}
+}
+@media (prefers-color-scheme:dark){
+  :root{--bg:#1b1a18;--surface:#232220;--ink:#e9e6df;--muted:#b3afa6;--faint:#96928a;--line:#38352f;--line2:#4a4740;--blue:#7fb3e8;--blue50:#1d2c3c;--blue100:#2c4660;--teal:#63c2a5;--teal50:#17302a;--focus:#7fb3e8;--shadow-md:0 8px 28px rgba(0,0,0,.42)}
+  body{background:var(--bg);color:var(--ink)}
+  .topbar{background:rgba(27,26,24,.96)}
+  .brand{color:var(--ink)}
+  .prose strong{color:#f4f1ea}
+  .prose blockquote{background:#1f2730;border-left-color:#3a5570}
+  .prose code{background:#302e29}
+  .prose pre,.prose pre code{background:#272521}
+  .prose table th{background:#2b2925}
+  .prose table tr:nth-child(even) td{background:#262420}
+  .chip,.filter,.toc-fab,.to-top,.menu-toggle{background:#262420;color:var(--ink)}
+  .chip.home{background:#1d2c3c;border-color:#3a5570;color:#b8d6f2}
+  .inline-links{background:#20211f}
+  .issue-card.featured{background:#1e2630;border-color:#3a5570;border-left-color:var(--blue)}
+  .notice{background:#1d2c3c;border-color:#3a5570;color:#b8d6f2}
+  .hero .kicker{color:var(--teal)}
+  .toc a.active{background:#1d2c3c;color:var(--blue)}
+  ::selection{background:#2c4660;color:#e9e6df}
+}
+
 @media print{
   .topbar,.sidebar,.to-top,#progress,.article-foot,.inline-links{display:none!important}
   .layout{display:block;padding:0}
@@ -219,13 +322,34 @@ JS = r"""
   var progress=document.getElementById('progress');
   var toTop=document.getElementById('toTop');
   var toggle=document.getElementById('menuToggle');
+  var fab=document.getElementById('tocFab');
+  var scrim=document.getElementById('scrim');
+  var drawerClose=document.getElementById('drawerClose');
   var sidebar=document.getElementById('sidebar');
+  var triggers=[toggle,fab].filter(Boolean);
+  var mobile=window.matchMedia('(max-width:960px)');
 
-  if(toggle&&sidebar){
-    toggle.addEventListener('click',function(){sidebar.classList.toggle('open');});
-    document.addEventListener('keydown',function(e){if(e.key==='Escape')sidebar.classList.remove('open');});
-    if(toc)toc.addEventListener('click',function(e){if(e.target.closest('a'))sidebar.classList.remove('open');});
+  function setDrawer(open,returnFocus){
+    if(!sidebar)return;
+    sidebar.classList.toggle('open',open);
+    if(scrim)scrim.classList.toggle('show',open);
+    document.body.classList.toggle('nav-open',open&&mobile.matches);
+    for(var i=0;i<triggers.length;i++)triggers[i].setAttribute('aria-expanded',open?'true':'false');
+    if(!open&&returnFocus&&mobile.matches&&fab)fab.focus({preventScroll:true});
   }
+  for(var t=0;t<triggers.length;t++){
+    triggers[t].addEventListener('click',function(){
+      setDrawer(!sidebar.classList.contains('open'),true);
+    });
+  }
+  if(scrim)scrim.addEventListener('click',function(){setDrawer(false,true);});
+  if(drawerClose)drawerClose.addEventListener('click',function(){setDrawer(false,true);});
+  document.addEventListener('keydown',function(e){
+    if(e.key==='Escape')setDrawer(false,true);
+  });
+  if(toc)toc.addEventListener('click',function(e){
+    if(e.target.closest('a'))setDrawer(false,false);
+  });
   if(filter&&toc){
     filter.addEventListener('input',function(){
       var q=this.value.trim().toLowerCase();
@@ -269,6 +393,19 @@ JS = r"""
   window.addEventListener('scroll',update,{passive:true});
   window.addEventListener('resize',update);
   update();
+
+  var tables=document.querySelectorAll('.prose table');
+  for(var k=0;k<tables.length;k++){
+    var table=tables[k];
+    var wrap=document.createElement('div');
+    wrap.className='table-wrap';
+    table.parentNode.insertBefore(wrap,table);
+    wrap.appendChild(table);
+    var hint=document.createElement('span');
+    hint.className='table-hint';
+    hint.textContent='左右滑动查看完整表格 →';
+    wrap.appendChild(hint);
+  }
 })();
 """
 
@@ -292,11 +429,13 @@ PAGE_TPL = r"""<!doctype html>
     <a href="https://tabthursday.com/notes" target="_blank" rel="noopener noreferrer">官方汇总</a>
     <a href="{{REPO}}" target="_blank" rel="noopener noreferrer">GitHub</a>
   </nav>
-  <button class="menu-toggle" id="menuToggle" type="button">目录</button>
+  <button class="menu-toggle" id="menuToggle" type="button" aria-controls="sidebar" aria-expanded="false">目录</button>
 </header>
+<div class="scrim" id="scrim"></div>
 <div class="layout">
-  <aside class="sidebar" id="sidebar">
+  <aside class="sidebar" id="sidebar" aria-label="章节目录">
     <div class="sidebar-head">
+      <button class="drawer-close" id="drawerClose" type="button" aria-label="关闭目录">×</button>
       <div class="sidebar-title">目录 · {{LABEL}}</div>
       <input class="filter" id="tocFilter" type="search" placeholder="筛选章节 / 分享者" autocomplete="off">
       <div class="filter-hint">Ctrl / ⌘ + K 快速定位</div>
@@ -319,6 +458,7 @@ PAGE_TPL = r"""<!doctype html>
     </div>
   </main>
 </div>
+<button class="toc-fab" id="tocFab" type="button" aria-controls="sidebar" aria-expanded="false" aria-label="打开章节目录"><span class="toc-fab-icon" aria-hidden="true"><i></i><i></i><i></i></span><span>目录</span></button>
 <button class="to-top" id="toTop" type="button" aria-label="返回顶部">↑</button>
 <script src="./assets/app.js"></script>
 </body>
@@ -412,7 +552,16 @@ code{background:#f1efe8;border-radius:4px;padding:2px 5px;font-size:.9em;word-br
 .links{display:flex;gap:14px;flex-wrap:wrap;margin-top:22px}
 .links a{display:inline-block;border:1px solid #d3d1c7;background:#fff;border-radius:8px;padding:9px 15px;color:#185fa5;text-decoration:none;font-size:13.5px}
 .links a:hover{border-color:#185fa5;background:#e6f1fb}
-.hint{font-size:12.5px;color:#888780;margin-top:26px}
+.hint{font-size:12.5px;color:#6f6e68;margin-top:26px}
+@media (prefers-color-scheme:dark){
+body{background:#1b1a18;color:#e9e6df}
+.code{color:#7fb3e8}
+p,.hint{color:#b3afa6}
+.box{background:#1d2c3c;border-color:#3a5570;color:#b8d6f2}
+code{background:#302e29}
+.links a{background:#232220;border-color:#4a4740;color:#7fb3e8}
+.links a:hover{background:#1d2c3c}
+}
 </style>
 </head>
 <body>
