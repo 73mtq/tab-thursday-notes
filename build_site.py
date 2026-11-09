@@ -368,6 +368,53 @@ HOME_TPL = r"""<!doctype html>
 """
 
 
+NOTFOUND_TPL = r"""<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>页面不存在 · Tab 星期四精读</title>
+<style>
+body{margin:0;background:#faf9f6;color:#2c2c2a;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;font-size:15px;line-height:1.8}
+.wrap{max-width:620px;margin:0 auto;padding:90px 24px}
+.code{font-size:64px;font-weight:500;line-height:1;margin:0 0 18px;color:#185fa5}
+h1{font-size:21px;font-weight:500;margin:0 0 12px}
+p{color:#5f5e5a;margin:0 0 14px}
+.box{background:#e6f1fb;border:1px solid #cfe3f7;border-radius:10px;padding:14px 16px;margin:20px 0;color:#0c447c;font-size:13.5px}
+code{background:#f1efe8;border-radius:4px;padding:2px 5px;font-size:.9em;word-break:break-all}
+.links{display:flex;gap:14px;flex-wrap:wrap;margin-top:22px}
+.links a{display:inline-block;border:1px solid #d3d1c7;background:#fff;border-radius:8px;padding:9px 15px;color:#185fa5;text-decoration:none;font-size:13.5px}
+.links a:hover{border-color:#185fa5;background:#e6f1fb}
+.hint{font-size:12.5px;color:#888780;margin-top:26px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="code">404</div>
+  <h1>这个地址没有对应的页面</h1>
+  <p id="msg">请检查地址是否完整，或从下面的入口重新进入。</p>
+  <div class="box" id="tip" hidden>看起来地址末尾多复制了字符（例如 <code>**</code>）。正确地址是：<br><code>https://73mtq.github.io/tab-thursday-notes/</code><br>正在自动跳转到首页…</div>
+  <div class="links">
+    <a href="./">返回首页</a>
+    <a href="./issue-001.html">第一期</a>
+    <a href="./issue-002.html">第二期</a>
+  </div>
+  <div class="hint">Tab 星期四 · 分享内容精读 · GitHub Pages</div>
+</div>
+<script>
+(function(){
+  if(/\*/.test(location.pathname)){
+    document.getElementById('tip').hidden=false;
+    document.getElementById('msg').textContent='地址里包含了不属于路径的字符，站点本身正常。';
+    setTimeout(function(){location.replace('./');},2600);
+  }
+})();
+</script>
+</body>
+</html>
+"""
+
+
 def slugify(value: str, separator: str = "-") -> str:
     """Keep CJK characters in heading anchors (Python-Markdown strips them by default)."""
     value = re.sub(r"<[^>]+>", "", value)
@@ -471,6 +518,7 @@ def main() -> None:
     DOCS.mkdir(exist_ok=True)
     ASSETS.mkdir(exist_ok=True)
     (DOCS / ".nojekyll").write_text("", encoding="utf-8")
+    (DOCS / "404.html").write_text(NOTFOUND_TPL, encoding="utf-8")
     (ASSETS / "style.css").write_text(CSS, encoding="utf-8")
     (ASSETS / "app.js").write_text(JS, encoding="utf-8")
 
